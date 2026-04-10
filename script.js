@@ -1,6 +1,7 @@
 /**
- * Henrique Matos — Portfolio Logic
- * Handles: Reveal on Scroll, Navbar Effects, Portfolio Filtering, Video Modal, Collapsible Cards
+ * Henrique Matos — Portfolio Logic (Global Version)
+ * Handles: Reveal on Scroll, Navbar Effects, Portfolio Filtering, Video Modal, Collapsible Cards,
+ * i18n (Language Switch), Back to Top.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,12 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-visible');
-        // Optional: stop observing once visible
-        // revealObserver.unobserve(entry.target);
       }
     });
   }, {
-    threshold: 0.15, // Trigger when 15% of element is visible
+    threshold: 0.15,
     rootMargin: '0px 0px -50px 0px'
   });
 
@@ -41,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Update active button
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
@@ -49,10 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       portfolioCards.forEach(card => {
         const category = card.getAttribute('data-category');
-        
         if (filterValue === 'all' || category === filterValue) {
           card.style.display = 'flex';
-          // Re-trigger reveal animation if hidden before
           setTimeout(() => card.classList.add('is-visible'), 10);
         } else {
           card.style.display = 'none';
@@ -69,37 +65,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   portfolioCards.forEach(card => {
     card.addEventListener('click', (e) => {
-      // Don't open video if clicking inside an expandable card's detail or button
       if (e.target.closest('.card-detail') || e.target.closest('.card-collapse-btn')) return;
 
       const videoId = card.getAttribute('data-vid');
-      const type = card.getAttribute('data-type'); // 'youtube'
+      const type = card.getAttribute('data-type');
 
       if (videoId && type === 'youtube') {
         const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
         modalFrame.innerHTML = `<iframe src="${embedUrl}" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
         modal.classList.add('open');
-        document.body.style.overflow = 'hidden'; // Lock scroll
+        document.body.style.overflow = 'hidden';
       } else if (card.getAttribute('data-expandable') === 'true') {
-        // Handle expand logic instead of video
         card.classList.toggle('expanded');
       }
     });
   });
 
-  // Close Modal
   const closeModal = () => {
     modal.classList.remove('open');
     modalFrame.innerHTML = '';
-    document.body.style.overflow = ''; // Unlock scroll
+    document.body.style.overflow = '';
   };
 
-  modalClose.addEventListener('click', closeModal);
-  modal.addEventListener('click', (e) => {
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (modal) modal.addEventListener('click', (e) => {
     if (e.target === modal) closeModal();
   });
 
-  // Esc key to close modal
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
   });
@@ -109,12 +101,68 @@ document.addEventListener('DOMContentLoaded', () => {
   const collapseBtns = document.querySelectorAll('.card-collapse-btn');
   collapseBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
-      e.stopPropagation(); // Prevent modal from opening
+      e.stopPropagation();
       const card = btn.closest('.portfolio-card');
       card.classList.remove('expanded');
-      // Scroll back to card top smoothly
       card.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   });
+
+
+  // 6. BACK TO TOP
+  const backToTopBtn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+    }
+  });
+
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+
+  // 7. i18n (Internationalization)
+  const langBtns = document.querySelectorAll('.lang-btn');
+  const translatableItems = document.querySelectorAll('[data-en]');
+
+  const setLanguage = (lang) => {
+    localStorage.setItem('portfolio-lang', lang);
+    
+    langBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+
+    translatableItems.forEach(item => {
+      const enText = item.getAttribute('data-en');
+      const ptText = item.getAttribute('data-pt') || item.innerHTML; // Fallback to current innerHTML
+
+      // Store PT text if not already stored
+      if (!item.getAttribute('data-pt')) {
+          item.setAttribute('data-pt', ptText);
+      }
+
+      if (lang === 'en') {
+        item.innerHTML = enText;
+      } else {
+        item.innerHTML = item.getAttribute('data-pt');
+      }
+    });
+  };
+
+  langBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      setLanguage(lang);
+    });
+  });
+
+  // Init language from local storage or default
+  const savedLang = localStorage.getItem('portfolio-lang') || 'pt';
+  if (savedLang === 'en') setLanguage('en');
 
 });

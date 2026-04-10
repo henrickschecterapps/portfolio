@@ -32,13 +32,17 @@
     <div class="container nav-inner">
       <a href="#" class="brand gradient-text">Henrique Matos</a>
       <ul class="nav-links">
-        <li><a href="#expertise">Expertise</a></li>
-        <li><a href="#experiencia">Experieencia</a></li>
-        <li><a href="#portfolio">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#expertise" data-en="Expertise">Expertise</a></li>
+        <li><a href="#experiencia" data-en="Experience">Experiência</a></li>
+        <li><a href="#portfolio" data-en="Projects">Projetos</a></li>
+        <li><a href="#contato" data-en="Contact">Contato</a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
       <a href="curriculo2.html" target="_blank" class="btn-resume">
-        <i class="fa-solid fa-download"></i> Ver Currículo
+        <i class="fa-solid fa-download"></i> <span data-en="Resume">Ver Currículo</span>
       </a>
     </div>
   </nav>
@@ -49,25 +53,25 @@
       <div class="hero-grid">
 
         <div class="hero-left">
-          <div class="hero-eyebrow reveal">
+          <div class="hero-eyebrow reveal" data-en="Available for new opportunities">
             <span class="dot"></span>
-            Disponivel para novas oportunidades
+            Disponível para novas oportunidades
           </div>
 
-          <h1 class="hero-title reveal delay-1">
-            Audiovisual Senior<br>
+          <h1 class="hero-title reveal delay-1" data-en="Senior Audiovisual<br><span class='gradient-text'>x Generative AI.</span>">
+            Audiovisual Sênior<br>
             <span class="gradient-text">x IA Generativa.</span>
           </h1>
 
-          <p class="hero-desc reveal delay-2">
-            Especialista com <strong>+10 anos de experiencia</strong> no ciclo completo de producao audiovisual — da Direcao Tecnica a Pos-Producao — aplicando <strong>inteligencia artificial de ponta</strong> para escalar operacoes criativas e gerar resultados mensuraveis.
+          <p class="hero-desc reveal delay-2" data-en="Expert with <strong>10+ years of experience</strong> in the full audiovisual production cycle — from Technical Direction to Post-Production — applying <strong>cutting-edge AI</strong> to scale creative operations and generate measurable results.">
+            Especialista com <strong>+10 anos de experiência</strong> no ciclo completo de produção audiovisual — da Direção Técnica à Pós-Produção — aplicando <strong>inteligência artificial de ponta</strong> para escalar operações criativas e gerar resultados mensuráveis.
           </p>
 
           <div class="hero-ctas reveal delay-3">
-            <a href="#portfolio" class="btn-primary">
+            <a href="#portfolio" class="btn-primary" data-en="<i class='fa-solid fa-play'></i> View Projects">
               <i class="fa-solid fa-play"></i> Ver Projetos
             </a>
-            <a href="mailto:henrickschecter@gmail.com" class="btn-ghost">
+            <a href="mailto:henrickschecter@gmail.com" class="btn-ghost" data-en="<i class='fa-regular fa-envelope'></i> Start a Chat">
               <i class="fa-regular fa-envelope"></i> Iniciar Conversa
             </a>
           </div>
@@ -75,15 +79,15 @@
           <div class="hero-stats reveal delay-3">
             <div>
               <div class="stat-num">+10</div>
-              <div class="stat-label">Anos de Mercado</div>
+              <div class="stat-label" data-en="Market Years">Anos de Mercado</div>
             </div>
             <div>
               <div class="stat-num">100+</div>
-              <div class="stat-label">Projetos Entregues</div>
+              <div class="stat-label" data-en="Projects Delivered">Projetos Entregues</div>
             </div>
             <div>
               <div class="stat-num">30%</div>
-              <div class="stat-label">Ganho de Eficiencia com IA</div>
+              <div class="stat-label" data-en="AI Efficiency Gain">Ganho de Eficiência com IA</div>
             </div>
           </div>
         </div>
@@ -116,114 +120,90 @@
 
       <div class="metric-item reveal">
         <span class="metric-value">+10</span>
-        <span class="metric-label">Anos de Mercado</span>
-        <span class="metric-desc">Audiovisual end-to-end desde 2014</span>
+        <span class="metric-label" data-en="Market Years">Anos de Mercado</span>
+        <span class="metric-desc" data-en="End-to-end audiovisual since 2014">Audiovisual end-to-end desde 2014</span>
       </div>
 
       <div class="metric-item reveal delay-1">
         <span class="metric-value">100+</span>
-        <span class="metric-label">Projetos Entregues</span>
-        <span class="metric-desc">Video, Design, IA e Fotografia</span>
+        <span class="metric-label" data-en="Projects Delivered">Projetos Entregues</span>
+        <span class="metric-desc" data-en="Video, Design, AI and Photo">Vídeo, Design, IA e Fotografia</span>
       </div>
 
       <div class="metric-item reveal delay-2">
         <span class="metric-value">30%</span>
-        <span class="metric-label">Reducao de Lead Time</span>
-        <span class="metric-desc">Via automacao e IA generativa</span>
+        <span class="metric-label" data-en="Lead Time Reduction">Redução de Lead Time</span>
+        <span class="metric-desc" data-en="Via automation and generative AI">Via automação e IA generativa</span>
       </div>
 
       <div class="metric-item reveal delay-3">
         <span class="metric-value">4x</span>
-        <span class="metric-label">Certificacoes</span>
-        <span class="metric-desc">Google, Microsoft (x2) e IBM</span>
+        <span class="metric-label" data-en="Certifications">Certificações</span>
+        <span class="metric-desc" data-en="Google, Microsoft (x2) and IBM">Google, Microsoft (x2) e IBM</span>
       </div>
 
     </div>
   </div>
 
-  <!-- EXPERTISE CARDS -->
+  <!-- EXPERTISE SECTION -->
   <section class="expertise-section" id="expertise">
     <div class="container">
-      <p class="section-label reveal">Pilares de Atuacao</p>
-      <h2 class="section-title reveal delay-1">O ciclo completo.<br>Da ideia ao impacto.</h2>
-      <p class="section-subtitle reveal delay-2">
-        Visao generalista estrategica que conecta narrativa criativa, operacao tecnica de set e as ferramentas de IA mais avancadas do mercado.
-      </p>
+      <p class="section-label reveal" data-en="Pilars of Action">Pilares de Atuação</p>
+      <h2 class="section-title reveal delay-1" data-en="The Full Cycle.<br>From Idea to Impact.">O ciclo completo.<br>Da ideia ao impacto.</h2>
+      <p class="section-subtitle reveal delay-2" data-en="Strategic generalist vision connecting creative narrative, technical operations and advanced AI tools."> Visão generalista estratégica que conecta narrativa criativa, operação técnica de set e as ferramentas de IA mais avançadas do mercado. </p>
 
-      <div class="expertise-grid">
-
-        <!-- Card 1 -->
-        <div class="expertise-card reveal">
-          <div class="card-img-banner">
-            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=900" alt="Estrategia">
-          </div>
-          <div class="card-body">
-            <div class="card-icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
-            <p class="card-eyebrow">Estrategia &amp; Producao</p>
-            <h3 class="card-title">Gestao End-to-End do Ciclo Audiovisual</h3>
-            <p class="card-desc">Planejamento e execucao completa de campanhas audiovisuais alinhadas aos KPIs de marketing. Do briefing criativo a entrega final, com rastreamento de metricas de retencao para garantir resultado mensuravel.</p>
-            <div class="card-tags">
-              <span class="tag-pill">Estrategia Digital</span>
-              <span class="tag-pill">KPI Tracking</span>
-              <span class="tag-pill">Branded Content</span>
-            </div>
-          </div>
+      <div class="skill-stack-grid reveal delay-3">
+        <!-- Audiovisual -->
+        <div class="skill-card">
+          <i class="fa-solid fa-video"></i>
+          <span data-en="Tech Direction">Direção Técnica</span>
         </div>
-
-        <!-- Card 2 -->
-        <div class="expertise-card reveal delay-1">
-          <div class="card-img-banner">
-            <img src="https://images.unsplash.com/photo-1598901865264-4f33a29bd78c?auto=format&fit=crop&q=80&w=900" alt="Set de Gravacao">
-          </div>
-          <div class="card-body">
-            <div class="card-icon-wrap"><i class="fa-solid fa-video"></i></div>
-            <p class="card-eyebrow">Direcao Tecnica</p>
-            <h3 class="card-title">Lideranca de Set &amp; Media Training C-Level</h3>
-            <p class="card-desc">Gestao tecnica plena de gravacoes presenciais. Setups broadcast multicanmera, iluminacao e audio profissional. Media training para executivos com foco em performance e autoridade on-camera.</p>
-            <div class="card-tags">
-              <span class="tag-pill">Broadcasting</span>
-              <span class="tag-pill">Iluminacao Corporativa</span>
-              <span class="tag-pill">Setup Multicamera</span>
-            </div>
-          </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-clapperboard"></i>
+          <span data-en="Post-Production">Pós-Produção</span>
         </div>
-
-        <!-- Card 3 -->
-        <div class="expertise-card reveal">
-          <div class="card-img-banner">
-            <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&q=80&w=900" alt="IA Generativa">
-          </div>
-          <div class="card-body">
-            <div class="card-icon-wrap"><i class="fa-solid fa-microchip"></i></div>
-            <p class="card-eyebrow">IA Generativa</p>
-            <h3 class="card-title">Sintese de Midia &amp; Automacao de Producao</h3>
-            <p class="card-desc">Pioneiro no uso de IA generativa em producao corporativa. Criacao de avatares sinteticos (HeyGen), clonagem vocal (ElevenLabs) e Prompt Engineering avancado reduzindo lead time em ate 30%.</p>
-            <div class="card-tags">
-              <span class="tag-pill">Prompt Engineering</span>
-              <span class="tag-pill">HeyGen / ElevenLabs</span>
-              <span class="tag-pill">Runway Gen-2</span>
-            </div>
-          </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-camera"></i>
+          <span data-en="Photography">Fotografia</span>
         </div>
-
-        <!-- Card 4 -->
-        <div class="expertise-card reveal delay-1">
-          <div class="card-img-banner">
-            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=900" alt="Workflow e Automacao">
-          </div>
-          <div class="card-body">
-            <div class="card-icon-wrap"><i class="fa-solid fa-arrows-spin"></i></div>
-            <p class="card-eyebrow">Processos &amp; Tech</p>
-            <h3 class="card-title">Otimizacao de Workflows &amp; Power Platform</h3>
-            <p class="card-desc">Mapeamento e redesign de fluxos de producao para escalar entregas. Automacoes com Power Apps e SharePoint que modernizam a gestao operacional do setor audiovisual.</p>
-            <div class="card-tags">
-              <span class="tag-pill">Power Apps</span>
-              <span class="tag-pill">SharePoint</span>
-              <span class="tag-pill">Workflow Design</span>
-            </div>
-          </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span data-en="Broadcasting">Broadcasting</span>
         </div>
-
+        <!-- IA -->
+        <div class="skill-card">
+          <i class="fa-solid fa-brain"></i>
+          <span data-en="Generative AI">IA Generativa</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-microchip"></i>
+          <span data-en="Prompt Engineering">Engenharia de Prompt</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-robot"></i>
+          <span data-en="AI Avatars">Avatares IA</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-bolt"></i>
+          <span data-en="Workflows">Workflows IA</span>
+        </div>
+        <!-- Marketing / UX -->
+        <div class="skill-card">
+          <i class="fa-solid fa-terminal"></i>
+          <span data-en="Power Platform">Power Platform</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-pen-nib"></i>
+          <span data-en="UX Design">UX Design</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-chart-simple"></i>
+          <span data-en="Marketing Strategy">Estratégia Mkt</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-code"></i>
+          <span data-en="SharePoint">SharePoint</span>
+        </div>
       </div>
     </div>
   </section>
@@ -231,8 +211,8 @@
   <!-- EXPERIENCIA -->
   <section class="experience-section" id="experiencia">
     <div class="container">
-      <p class="section-label reveal">Trajetoria Profissional</p>
-      <h2 class="section-title reveal delay-1">Mais de uma decada<br>construindo autoridade.</h2>
+      <p class="section-label reveal" data-en="Professional Career">Trajetória Profissional</p>
+      <h2 class="section-title reveal delay-1" data-en="More than a decade<br>building authority.">Mais de uma década<br>construindo autoridade.</h2>
 
       <div class="timeline">
         <div class="tl-item reveal">
@@ -240,16 +220,16 @@
           <div class="tl-content">
             <div class="tl-header">
               <div>
-                <div class="tl-role">Analista de Audiovisual e Marketing</div>
+                <div class="tl-role" data-en="Audiovisual & Marketing Analyst">Analista de Audiovisual e Marketing</div>
                 <div class="tl-company">Tripla</div>
               </div>
-              <span class="tl-date">Nov 2018 – Presente</span>
+              <span class="tl-date" data-en="Nov 2018 – Present">Nov 2018 – Presente</span>
             </div>
             <ul class="tl-bullets">
-              <li><strong>Estrategia &amp; Producao Audiovisual:</strong> Gestao completa do ciclo end-to-end, alinhando narrativas visuais aos KPIs de marketing. Responsavel por videos institucionais, podcasts e cobertura de eventos.</li>
-              <li><strong>Direcao Tecnica de Estudio:</strong> Lideranca em gravacoes presenciais com setup broadcast de iluminacao, audio e video. Direcao de cena e media training para porta-vozes e lideres C-Level.</li>
-              <li><strong>Atuacao Generalista:</strong> Elo estrategico entre as demandas de marketing e a execucao criativa, otimizando fluxos de producao para aumentar agilidade e padronizar entregas.</li>
-              <li><strong>Inovacao com IA:</strong> Pioneirismo na criacao de videos com IA Generativa e implementacao de automacoes (Power Platform/SharePoint) para modernizar a gestao do setor.</li>
+              <li data-en="<strong>Audiovisual Strategy & Production:</strong> End-to-end cycle management, aligning visual narratives with marketing KPIs. Responsible for institutional videos, podcasts, and event coverage."><strong>Estrategia &amp; Produção Audiovisual:</strong> Gestão completa do ciclo end-to-end, alinhando narrativas visuais aos KPIs de marketing. Responsável por vídeos institucionais, podcasts e cobertura de eventos.</li>
+              <li data-en="<strong>Technical Studio Direction:</strong> Leadership in in-person recordings with broadcast lighting, audio, and video setups. Scene direction and media training for spokespeople and C-Level leaders."><strong>Direção Técnica de Estúdio:</strong> Liderança em gravações presenciais com setup broadcast de iluminação, áudio e vídeo. Direção de cena e media training para porta-vozes e líderes C-Level.</li>
+              <li data-en="<strong>Generalist Role:</strong> Strategic link between marketing demands and creative execution, optimizing production flows to increase agility and standardize deliveries."><strong>Atuação Generalista:</strong> Elo estratégico entre as demandas de marketing e a execução criativa, otimizando fluxos de produção para aumentar agilidade e padronizar entregas.</li>
+              <li data-en="<strong>AI Innovation:</strong> Pioneering the creation of videos with Generative AI and implementing automations (Power Platform/SharePoint) to modernize sector management."><strong>Inovação com IA:</strong> Pioneirismo na criação de vídeos com IA Generativa e implementação de automações (Power Platform/SharePoint) para modernizar a gestão do setor.</li>
             </ul>
           </div>
         </div>
@@ -344,28 +324,28 @@
   <!-- IA WORKFLOW SECTION -->
   <section class="workflow-section">
     <div class="container">
-      <p class="section-label reveal" style="text-align: center;">IA & Escala</p>
-      <h2 class="section-title reveal delay-1" style="text-align: center; margin-bottom: 2rem;">Meu Workflow de <br><span class="gradient-text">Alta Performance.</span></h2>
-      <p class="section-subtitle reveal delay-2" style="text-align: center; margin: 0 auto 4rem;">Como transformo o ciclo tradicional de audiovisual em uma operação escalável com IA.</p>
+      <p class="section-label reveal" style="text-align: center;" data-en="AI & Scale">IA & Escala</p>
+      <h2 class="section-title reveal delay-1" style="text-align: center; margin-bottom: 2rem;" data-en="My High Performance <br><span class='gradient-text'>Workflow.</span>">Meu Workflow de <br><span class="gradient-text">Alta Performance.</span></h2>
+      <p class="section-subtitle reveal delay-2" style="text-align: center; margin: 0 auto 4rem;" data-en="How I transform traditional audiovisual cycles into a scalable AI-driven operation.">Como transformo o ciclo tradicional de audiovisual em uma operação escalável com IA.</p>
       
       <div class="workflow-grid">
         <div class="workflow-step reveal">
           <div class="step-num">1</div>
           <i class="fa-solid fa-lightbulb"></i>
-          <h3>Briefing & Estratégia</h3>
-          <p>Mapeamento de KPIs e criação de personas, usando LLMs para refinar o roteiro e garantir alinhamento com a marca.</p>
+          <h3 data-en="Briefing & Strategy">Briefing & Estratégia</h3>
+          <p data-en="KPI mapping and persona creation, using LLMs to refine scripts and ensure brand alignment.">Mapeamento de KPIs e criação de personas, usando LLMs para refinar o roteiro e garantir alinhamento com a marca.</p>
         </div>
         <div class="workflow-step reveal delay-1">
           <div class="step-num">2</div>
           <i class="fa-solid fa-microchip"></i>
-          <h3>Produção Sintética</h3>
-          <p>Uso de avatares (HeyGen) e clonagem vocal (ElevenLabs) para eliminar custos de locação e logística física.</p>
+          <h3 data-en="Synthetic Production">Produção Sintética</h3>
+          <p data-en="Using avatars (HeyGen) and vocal cloning (ElevenLabs) to eliminate location and logistics costs.">Uso de avatares (HeyGen) e clonagem vocal (ElevenLabs) para eliminar custos de locação e logística física.</p>
         </div>
         <div class="workflow-step reveal delay-2">
           <div class="step-num">3</div>
           <i class="fa-solid fa-rocket"></i>
-          <h3>Entrega & Impacto</h3>
-          <p>Edição premium em lote e automação de versões para diferentes canais, garantindo 4x mais volume de entrega.</p>
+          <h3 data-en="Delivery & Impact">Entrega & Impacto</h3>
+          <p data-en="Batch premium editing and channel-specific version automation, ensuring 4x faster delivery.">Edição premium em lote e automação de versões para diferentes canais, garantindo 4x mais volume de entrega.</p>
         </div>
       </div>
     </div>
@@ -374,28 +354,28 @@
   <!-- PORTFOLIO -->
   <section class="portfolio-section" id="portfolio">
     <div class="container">
-      <p class="section-label reveal">Portfolio Completo</p>
-      <h2 class="section-title reveal delay-1">Mais de uma<br>especialidade.</h2>
-      <p class="section-subtitle reveal delay-2">
-        Video, Design, UI/UX, IA Generativa e Fotografia — o ecossistema criativo e tecnico completo.
+      <p class="section-label reveal" data-en="Full Portfolio">Portfolio Completo</p>
+      <h2 class="section-title reveal delay-1" data-en="More than one<br>Specialty.">Mais de uma<br>especialidade.</h2>
+      <p class="section-subtitle reveal delay-2" data-en="Video, Design, UI/UX, Generative AI and Photography — the complete creative and technical ecosystem.">
+        Vídeo, Design, UI/UX, IA Generativa e Fotografia — o ecossistema criativo e técnico completo.
       </p>
 
       <!-- Filter Tabs -->
       <div class="portfolio-filters reveal">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="video">
-          <i class="fa-solid fa-play" style="font-size:.65rem;"></i> Video
+        <button class="filter-btn active" data-filter="all" data-en="All">Todos</button>
+        <button class="filter-btn" data-filter="video" data-en="<i class='fa-solid fa-play' style='font-size:.65rem;'></i> Video">
+          <i class="fa-solid fa-play" style="font-size:.65rem;"></i> Vídeo
         </button>
-        <button class="filter-btn" data-filter="ia">
+        <button class="filter-btn" data-filter="ia" data-en="<i class='fa-solid fa-microchip' style='font-size:.65rem;'></i> Generative AI">
           <i class="fa-solid fa-microchip" style="font-size:.65rem;"></i> IA Generativa
         </button>
-        <button class="filter-btn" data-filter="design">
+        <button class="filter-btn" data-filter="design" data-en="<i class='fa-solid fa-pen-nib' style='font-size:.65rem;'></i> Design">
           <i class="fa-solid fa-pen-nib" style="font-size:.65rem;"></i> Design
         </button>
-        <button class="filter-btn" data-filter="ui">
+        <button class="filter-btn" data-filter="ui" data-en="<i class='fa-solid fa-layer-group' style='font-size:.65rem;'></i> UI/UX">
           <i class="fa-solid fa-layer-group" style="font-size:.65rem;"></i> UI/UX
         </button>
-        <button class="filter-btn" data-filter="foto">
+        <button class="filter-btn" data-filter="foto" data-en="<i class='fa-solid fa-camera' style='font-size:.65rem;'></i> Photography">
           <i class="fa-solid fa-camera" style="font-size:.65rem;"></i> Fotografia
         </button>
       </div>
@@ -410,10 +390,10 @@
             <div class="thumb-action"><i class="fa-solid fa-play"></i></div>
           </div>
           <div class="portfolio-info">
-            <p class="portfolio-cat">Direcao Tecnica · Institucional</p>
-            <h3 class="portfolio-title">Campanha Corporativa Institucional</h3>
-            <p class="portfolio-desc">Producao end-to-end com setup multicanmera, iluminacao e direcao de porta-voz executivo.</p>
-            <div class="impact-badge">
+            <p class="portfolio-cat" data-en="Technical Direction · Institutional">Direção Técnica · Institucional</p>
+            <h3 class="portfolio-title" data-en="Institutional Corporate Campaign">Campanha Corporativa Institucional</h3>
+            <p class="portfolio-desc" data-en="End-to-end production with multi-camera setup, lighting and C-Level media training.">Produção end-to-end com setup multicâmera, iluminação e direção de porta-voz executivo.</p>
+            <div class="impact-badge" data-en="<i class='fa-solid fa-chart-line'></i> +45% Internal Engagement">
               <i class="fa-solid fa-chart-line"></i> +45% de Engajamento Interno
             </div>
           </div>
@@ -427,10 +407,10 @@
             <div class="thumb-action"><i class="fa-solid fa-play"></i></div>
           </div>
           <div class="portfolio-info">
-            <p class="portfolio-cat">HeyGen · Clonagem Vocal</p>
-            <h3 class="portfolio-title">Treinamento Corporativo com Avatar IA</h3>
-            <p class="portfolio-desc">Aplicacao de avatar digital com clonagem vocal para treinamentos escaláveis e de baixo custo.</p>
-            <div class="impact-badge">
+            <p class="portfolio-cat" data-en="HeyGen · Vocal Cloning">HeyGen · Clonagem Vocal</p>
+            <h3 class="portfolio-title" data-en="Corporate Training with AI Avatar">Treinamento Corporativo com Avatar IA</h3>
+            <p class="portfolio-desc" data-en="Implementation of digital avatars with vocal cloning for scalable, low-cost training.">Aplicação de avatar digital com clonagem vocal para treinamentos escaláveis e de baixo custo.</p>
+            <div class="impact-badge" data-en="<i class='fa-solid fa-clock-rotate-left'></i> 60% Lead Time Reduction">
               <i class="fa-solid fa-clock-rotate-left"></i> Redução de 60% no Lead Time
             </div>
           </div>
@@ -458,10 +438,10 @@
             <div class="thumb-action"><i class="fa-solid fa-play"></i></div>
           </div>
           <div class="portfolio-info">
-            <p class="portfolio-cat">Runway Gen-2 · Prompt Engineering</p>
-            <h3 class="portfolio-title">Producao 100% IA — The Future is Now</h3>
-            <p class="portfolio-desc">Conteudo sintetico gerado por inteiro via IA, com prompt engineering e montagem automatizada.</p>
-            <div class="impact-badge">
+            <p class="portfolio-cat" data-en="Runway Gen-2 · Prompt Engineering">Runway Gen-2 · Prompt Engineering</p>
+            <h3 class="portfolio-title" data-en="100% AI Production — The Future is Now">Produção 100% IA — The Future is Now</h3>
+            <p class="portfolio-desc" data-en="Purely AI-generated content, with advanced prompt engineering and automated montage.">Conteúdo sintético gerado por inteiro via IA, com prompt engineering e montagem automatizada.</p>
+            <div class="impact-badge" data-en="<i class='fa-solid fa-money-bill-trend-up'></i> 90% Production Cost Reduction">
               <i class="fa-solid fa-money-bill-trend-up"></i> Redução de 90% no Custo de Produção
             </div>
           </div>
@@ -616,10 +596,10 @@
             <div class="thumb-action"><i class="fa-solid fa-expand"></i></div>
           </div>
           <div class="portfolio-info">
-            <p class="portfolio-cat">Figma · Design System</p>
-            <h3 class="portfolio-title">Dashboard de Gestao de Demandas</h3>
-            <p class="portfolio-desc">Interface de controle de fluxo de producao audiovisual desenvolvida no Figma e implementada via Power Apps.</p>
-            <div class="impact-badge">
+            <p class="portfolio-cat" data-en="Figma · Design System">Figma · Design System</p>
+            <h3 class="portfolio-title" data-en="Demand Management Dashboard">Dashboard de Gestão de Demandas</h3>
+            <p class="portfolio-desc" data-en="Audiovisual production workflow interface developed in Figma and implemented via Power Apps.">Interface de controle de fluxo de produção audiovisual desenvolvida no Figma e implementada via Power Apps.</p>
+            <div class="impact-badge" data-en="<i class='fa-solid fa-users-gear'></i> 40% reduction in ticket time">
               <i class="fa-solid fa-users-gear"></i> Redução de 40% no tempo de abertura de chamados
             </div>
           </div>
@@ -629,10 +609,10 @@
                 <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&q=80&w=1200" alt="Dashboard Detail">
               </div>
               <div class="card-detail-body">
-                <h3 class="card-detail-title">Dashboard Operacional de Demandas Audiovisuais</h3>
-                <p class="card-detail-desc">Design e implementacao de interface de gestao de demandas do setor de audiovisual. O sistema permite rastrear o status de cada producao, atribuir responsaveis, estimar prazos e visualizar a carga de trabalho da equipe. Foi projetado no Figma com um Design System proprietario e implementado usando Microsoft Power Apps e SharePoint como backend.</p>
+                <h3 class="card-detail-title" data-en="Operational Dashboard for Audiovisual Demands">Dashboard Operacional de Demandas Audiovisuais</h3>
+                <p class="card-detail-desc" data-en="Design and implementation of a demand management interface for the audiovisual sector. The system allows tracking the status of each production, assigning responsibilities, estimating deadlines, and visualizing the team's workload. It was designed in Figma with a proprietary Design System and implemented using Microsoft Power Apps and SharePoint as the backend.">Design e implementação de interface de gestão de demandas do setor de audiovisual. O sistema permite rastrear o status de cada produção, atribuir responsáveis, estimar prazos e visualizar a carga de trabalho da equipe. Foi projetado no Figma com um Design System proprietário e implementado usando Microsoft Power Apps e SharePoint como backend.</p>
                 <div>
-                  <p class="card-detail-tools-label">Ferramentas utilizadas</p>
+                  <p class="card-detail-tools-label" data-en="Tools used">Ferramentas utilizadas</p>
                   <div class="card-detail-tags">
                     <span class="tag-pill">Figma</span>
                     <span class="tag-pill">Power Apps</span>
@@ -655,10 +635,10 @@
             <div class="thumb-action"><i class="fa-solid fa-expand"></i></div>
           </div>
           <div class="portfolio-info">
-            <p class="portfolio-cat">UX Design · Google Certificate</p>
-            <h3 class="portfolio-title">Mapeamento de Jornada do Usuario</h3>
-            <p class="portfolio-desc">Pesquisa e mapeamento de UX aplicado em plataforma interna de requisicao de conteudo visual.</p>
-            <div class="impact-badge">
+            <p class="portfolio-cat" data-en="UX Design · Google Certificate">UX Design · Google Certificate</p>
+            <h3 class="portfolio-title" data-en="User Journey Mapping">Mapeamento de Jornada do Usuário</h3>
+            <p class="portfolio-desc" data-en="UX research and mapping applied to an internal visual content request platform.">Pesquisa e mapeamento de UX aplicado em plataforma interna de requisição de conteúdo visual.</p>
+            <div class="impact-badge" data-en="<i class='fa-solid fa-chart-pie'></i> +25% internal user satisfaction">
               <i class="fa-solid fa-chart-pie"></i> +25% na satisfação do usuário interno
             </div>
           </div>
@@ -763,19 +743,19 @@
   <!-- TESTEMUNHOS -->
   <section class="testimonial-section">
     <div class="container">
-      <p class="section-label reveal" style="text-align: center;">Feedback</p>
-      <h2 class="section-title reveal delay-1" style="text-align: center; margin-bottom: 2rem;">Quem confia no<br><span class="gradient-text">meu trabalho.</span></h2>
+      <p class="section-label reveal" style="text-align: center;" data-en="Feedback">Feedback</p>
+      <h2 class="section-title reveal delay-1" style="text-align: center; margin-bottom: 2rem;" data-en="Trust in<br><span class='gradient-text'>my work.</span>">Quem confia no<br><span class="gradient-text">meu trabalho.</span></h2>
       
       <div class="testimonial-grid">
         <!-- 1 -->
         <div class="testimonial-card reveal">
-          <p class="testimonial-body">
+          <p class="testimonial-body" data-en="'Henrique is a rare professional who blends flawless technical vision with a genuine curiosity for AI. He doesn't just deliver videos, he scales our communication capacity.'">
             "O Henrique é um profissional raro que une visão técnica impecável com uma curiosidade genuína por IA. Ele não apenas entrega vídeos, ele escala nossa capacidade de comunicação."
           </p>
           <div class="testimonial-footer">
             <div>
               <div class="testimonial-author">Carlos Eduardo</div>
-              <div class="testimonial-role">Gestor de Marketing — Tripla</div>
+              <div class="testimonial-role" data-en="Marketing Manager — Tripla">Gestor de Marketing — Tripla</div>
             </div>
             <a href="https://linkedin.com/in/henrique-matos" target="_blank" class="btn-linkedin-small" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
@@ -785,13 +765,13 @@
 
         <!-- 2 -->
         <div class="testimonial-card reveal delay-1">
-          <p class="testimonial-body">
+          <p class="testimonial-body" data-en="'His ability to conduct media training for our executives raised the brand's authority level. The recording setups he designs are broadcast standard.'">
             "Sua capacidade de conduzir media training para nossos executivos elevou o nível de autoridade da marca. Os setups de gravação que ele projeta são de padrão broadcast."
           </p>
           <div class="testimonial-footer">
             <div>
               <div class="testimonial-author">Mariana Souza</div>
-              <div class="testimonial-role">Diretora de Comunicação</div>
+              <div class="testimonial-role" data-en="Communication Director">Diretora de Comunicação</div>
             </div>
             <a href="https://linkedin.com/in/henrique-matos" target="_blank" class="btn-linkedin-small" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
@@ -801,13 +781,13 @@
 
         <!-- 3 -->
         <div class="testimonial-card reveal">
-          <p class="testimonial-body">
+          <p class="testimonial-body" data-en="'We implemented automations and AI avatars under his leadership that reduced our production lead time by 30%. Extremely strategic and results-focused.'">
             "Implementamos automações e avatares de IA sob sua liderança que reduziram nosso lead time de produção em 30%. Extremamente estratégico e focado em resultados."
           </p>
           <div class="testimonial-footer">
             <div>
               <div class="testimonial-author">Ricardo Lima</div>
-              <div class="testimonial-role">CTO & Especialista em Tech</div>
+              <div class="testimonial-role" data-en="CTO & Tech Specialist">CTO & Especialista em Tech</div>
             </div>
             <a href="https://linkedin.com/in/henrique-matos" target="_blank" class="btn-linkedin-small" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
@@ -817,13 +797,13 @@
 
         <!-- 4 -->
         <div class="testimonial-card reveal delay-1">
-          <p class="testimonial-body">
+          <p class="testimonial-body" data-en="'Henrique's versatility, from film sets to interface design, makes him a complete creative lead. An essential partner for complex projects.'">
             "A versatilidade do Henrique, do set de filmagem ao design de interfaces, faz dele um lead criativo completo. Um parceiro essencial para projetos complexos."
           </p>
           <div class="testimonial-footer">
             <div>
               <div class="testimonial-author">Juliana Porto</div>
-              <div class="testimonial-role">Produtora Executiva</div>
+              <div class="testimonial-role" data-en="Executive Producer">Produtora Executiva</div>
             </div>
             <a href="https://linkedin.com/in/henrique-matos" target="_blank" class="btn-linkedin-small" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
@@ -837,43 +817,43 @@
   <!-- EDUCACAO E CERTS -->
   <section class="edu-section" id="educacao">
     <div class="container">
-      <p class="section-label reveal">Formacao &amp; Certificacoes</p>
-      <h2 class="section-title reveal delay-1">Base academica.<br>Visao de mercado.</h2>
+      <p class="section-label reveal" data-en="Education & Certs">Formação &amp; Certificações</p>
+      <h2 class="section-title reveal delay-1" data-en="Academic Base.<br>Market Vision.">Base acadêmica.<br>Visão de mercado.</h2>
 
       <div class="edu-grid">
         <div class="edu-card reveal">
           <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
           <div>
-            <div class="edu-degree">Bacharelado em Cinema e Audiovisual</div>
-            <div class="edu-school">Centro Universitario Una · 2012–2016</div>
+            <div class="edu-degree" data-en="Bachelor in Cinema & Audiovisual">Bacharelado em Cinema e Audiovisual</div>
+            <div class="edu-school">Centro Universitário Una · 2012–2016</div>
           </div>
         </div>
         <div class="edu-card reveal delay-1">
           <div class="edu-icon"><i class="fa-brands fa-google"></i></div>
           <div>
-            <div class="edu-degree">Google UX Design Professional</div>
-            <div class="edu-school">Google / Coursera · Certificacao</div>
+            <div class="edu-degree" data-en="Google UX Design Professional">Google UX Design Professional</div>
+            <div class="edu-school" data-en="Google / Coursera · Certification">Google / Coursera · Certificação</div>
           </div>
         </div>
         <div class="edu-card reveal">
           <div class="edu-icon"><i class="fa-brands fa-microsoft"></i></div>
           <div>
-            <div class="edu-degree">MS Power Apps — Data-Driven Apps</div>
-            <div class="edu-school">Microsoft · Certificacao</div>
+            <div class="edu-degree" data-en="MS Power Apps — Data-Driven Apps">MS Power Apps — Data-Driven Apps</div>
+            <div class="edu-school" data-en="Microsoft · Certification">Microsoft · Certificação</div>
           </div>
         </div>
         <div class="edu-card reveal delay-1">
           <div class="edu-icon"><i class="fa-brands fa-microsoft"></i></div>
           <div>
-            <div class="edu-degree">MS SharePoint &amp; Transformacao Digital</div>
-            <div class="edu-school">Microsoft · Certificacao</div>
+            <div class="edu-degree" data-en="MS SharePoint & Digital Transformation">MS SharePoint &amp; Transformação Digital</div>
+            <div class="edu-school" data-en="Microsoft · Certification">Microsoft · Certificação</div>
           </div>
         </div>
         <div class="edu-card reveal">
           <div class="edu-icon"><i class="fa-solid fa-lightbulb"></i></div>
           <div>
-            <div class="edu-degree">IBM Design Thinking Practitioner</div>
-            <div class="edu-school">IBM · Certificacao</div>
+            <div class="edu-degree" data-en="IBM Design Thinking Practitioner">IBM Design Thinking Practitioner</div>
+            <div class="edu-school" data-en="IBM · Certification">IBM · Certificação</div>
           </div>
         </div>
       </div>
@@ -883,17 +863,17 @@
   <!-- FOOTER CTA -->
   <section class="footer-cta" id="contato">
     <div class="container">
-      <h2 class="reveal">Pronto para <span class="gradient-text">elevar</span><br>sua operacao criativa?</h2>
-      <p class="reveal delay-1">Aberto a novas oportunidades em Audiovisual, Marketing e IA Generativa.</p>
+      <h2 class="reveal" data-en="Ready to <span class='gradient-text'>scale</span><br>your creative operation?">Pronto para <span class="gradient-text">elevar</span><br>sua operação criativa?</h2>
+      <p class="reveal delay-1" data-en="Open to new opportunities in Audiovisual, Marketing and Generative AI.">Aberto a novas oportunidades em Audiovisual, Marketing e IA Generativa.</p>
       <div class="contact-links reveal delay-2">
-        <a href="mailto:henrickschecter@gmail.com" class="btn-primary">
+        <a href="mailto:henrickschecter@gmail.com" class="btn-primary" data-en="<i class='fa-regular fa-envelope'></i> henrickschecter@gmail.com">
           <i class="fa-regular fa-envelope"></i> henrickschecter@gmail.com
         </a>
         <a href="https://linkedin.com/in/henrique-matos" target="_blank" class="btn-ghost">
           <i class="fa-brands fa-linkedin"></i> LinkedIn
         </a>
         <a href="curriculo2.html" target="_blank" class="btn-ghost">
-          <i class="fa-solid fa-file-lines"></i> Ver Currículo
+          <i class="fa-solid fa-file-lines"></i> <span data-en="View Resume">Ver Currículo</span>
         </a>
       </div>
     </div>
@@ -901,8 +881,8 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>&copy; 2024 Henrique Matos · Belo Horizonte, MG</span>
-      <span>Analista Audiovisual · Direcao Tecnica · IA &amp; Estrategia</span>
+      <span data-en="&copy; 2024 Henrique Matos · Belo Horizonte, Brazil">&copy; 2024 Henrique Matos · Belo Horizonte, MG</span>
+      <span data-en="Audiovisual Analyst · Technical Direction · AI & Strategy">Analista Audiovisual · Direção Técnica · IA &amp; Estratégia</span>
       <div class="footer-social">
         <a href="mailto:henrickschecter@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
         <a href="https://linkedin.com/in/henrique-matos" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
@@ -926,6 +906,11 @@
       <i class="fa-regular fa-envelope"></i>
     </a>
   </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" title="Voltar ao Topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>
