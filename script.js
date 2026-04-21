@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalClose = document.getElementById('modal-close');
 
   portfolioCards.forEach(card => {
-    card.addEventListener('click', (e) => {
+    const handleCardInteraction = (e) => {
       if (e.target.closest('.card-detail') || e.target.closest('.card-collapse-btn')) return;
 
       const videoId = card.getAttribute('data-vid');
@@ -77,6 +77,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'hidden';
       } else if (card.getAttribute('data-expandable') === 'true') {
         card.classList.toggle('expanded');
+        // Update aria-expanded when toggling
+        const isExpanded = card.classList.contains('expanded');
+        card.setAttribute('aria-expanded', isExpanded.toString());
+      }
+    };
+
+    card.addEventListener('click', handleCardInteraction);
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault(); // Prevent default scroll for Space
+        handleCardInteraction(e);
       }
     });
   });

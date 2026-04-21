@@ -1,0 +1,3 @@
+## 2024-04-21 - [Interactive Divs Missing Keyboard Support]
+**Learning:** Portfolio cards that expand or open modals using JS click listeners were built with `<div>` elements but lacked `tabindex="0"`, `role="button"`, and keyboard event handlers. This made them inaccessible to keyboard and screen reader users. Additionally, visible focus states (`:focus-visible`) were completely missing across the app.
+**Action:** Always add `tabindex="0"`, `role="button"`, and `keydown` event listeners (for Enter/Space) to interactive non-semantic elements. Add a global `:focus-visible` styling block in the design system to ensure accessible keyboard navigation.
