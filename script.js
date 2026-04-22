@@ -26,10 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. NAVBAR SCROLL EFFECT
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
+    if (navbar) {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
     }
   });
 
@@ -72,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (videoId && type === 'youtube') {
         const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-        modalFrame.innerHTML = `<iframe src="${embedUrl}" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
-        modal.classList.add('open');
+        if (modalFrame) modalFrame.innerHTML = `<iframe src="${embedUrl}" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        if (modal) modal.classList.add('open');
         document.body.style.overflow = 'hidden';
       } else if (card.getAttribute('data-expandable') === 'true') {
         card.classList.toggle('expanded');
@@ -93,8 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const closeModal = () => {
-    modal.classList.remove('open');
-    modalFrame.innerHTML = '';
+    if (modal) modal.classList.remove('open');
+    if (modalFrame) modalFrame.innerHTML = '';
     document.body.style.overflow = '';
   };
 
@@ -104,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    if (e.key === 'Escape' && modal && modal.classList.contains('open')) closeModal();
   });
 
 
@@ -123,10 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. BACK TO TOP
   const backToTopBtn = document.getElementById('back-to-top');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) {
-      backToTopBtn.classList.add('show');
-    } else {
-      backToTopBtn.classList.remove('show');
+    if (backToTopBtn) {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
     }
   });
 
